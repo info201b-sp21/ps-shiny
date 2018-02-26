@@ -45,8 +45,7 @@ the columns express different nutritional information of the cereal:
  
 ## Assignment Structure
 
-As with previous assignments,
-[follow this link](https://classroom.github.com/a/vaINPyov) to create
+As with previous assignments, follow the link to create
 your own private repository for this assignment (well, if you are
 reading this readme you probably already did it).  This will
 automatically create a private repository which you will submit to
@@ -62,7 +61,7 @@ visual representation of the cereal dataset. What the application
 looks like is up to you, as long as it meets the following
 requirements:
 
-* There is a sidePanel in which you've created at least two widgets
+* There is a side panel in which you've created at least two widgets
   that change the visual output in your application, such as data
   displayed on the x or y axis of a scatterplot.
 * One of your widgets must change the data that is being
@@ -72,7 +71,7 @@ requirements:
   color of each point would (i.e., color by hot/cold cereal or by
   manufacturer)
 * You must create a visual representation of a dataset that reacts to
-  the widgets in the sidePanel
+  the widgets in the sidepanel
 * You must push your application up to the shinyapps.io server, making
   it publicly usable
 
@@ -91,9 +90,9 @@ comfortable with the structure of a web application. Feel free to be
 creative in your assignment, although a scatter-plot with 2 widgets
 controlling the x variable and y variable is sufficient.
 
-### sidePanel
+### Sidepanel
 
-In your sidePanel, you should create two widgets of your choice. As
+In your sidepanel, you should create two widgets of your choice. As
 stated above in the requirements, at least one of these widgets should
 change the data being displayed.  Feel free to use whichever types of
 widgets you want, as long as they update the visual representation of
@@ -101,7 +100,7 @@ the data.
 
 ### Visual representation
 
-The mainPanel of your application should contain a visual
+The main panel of your application should contain a visual
 representation of the cereal dataset. The visualization can be made
 with base R graphics, ggplot2, [plotly](https://plot.ly/r/), or
 something [more interesting](https://github.com/juba/scatterD3).

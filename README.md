@@ -2,14 +2,12 @@
 
 ## Overview
 
-RStudio's shiny framework provides a straightforward structure for
-creating not just websites, but web applications. By providing R users
-with the ability to generate web-based interfaces that communicate
-with R servers, shiny enables developers to create dynamic platforms
-for data exploration.
-
 The purpose of this assignment is to provide you with the opportunity
-to practice building a shiny application.  Shiny has a few concepts
+to practice building a shiny application.  These are client-server
+type web applications where all the tedious technical tasks of both
+frontend and backend are transparently created by shiny, the user has
+just to provide code for the content and layout.
+Shiny has a few concepts
 you have to understand to get going, but once you are comfortable
 with the general skeleton of these applications, transforming your
 analyses into interactive experiences goes fairly fast.
@@ -60,13 +58,13 @@ requirements:
   that change the visual output in your application, such as type of
   the plot, data
   displayed on the x or y axis of a scatterplot.  Note: I mean _side
-  panel_ but not neccesarily _sidebarLayout_.
+  panel_ but it does not have to be _sidebarLayout_.
 * There is a main panel where the data is presented (as a plot or table).
 * You must create at least one visual representation of a dataset (a
   plot) that reacts to
   the widgets in the sidepanel
-* You must also add some textual output that reacts to a widget, for
-  instance number of non-missing observations.
+* You must also add some textual output that reacts to a widget, such as
+  the number of non-missing observations.
 * One of your widgets must change the data that is being
   displayed.  For instance, the user may be able to choose between
   distribution of date and distribution of shape.  In contrary, if the widget only
@@ -76,7 +74,7 @@ requirements:
 * You must push your application up to the
   [shinyapps.io](http://www.shinyapps.io) server (or
   another server if you like), making
-  it publicly usable
+  it publicly available
 *  For this application, use the multiple-file setup (i.e both ui.R and
    server.R):
 	* A ui.R file, that drives the structure of the user interface
@@ -88,8 +86,8 @@ requirements:
 	  file should contain a link to your project on the
 	  [shinyapps](http://www.shinyapps.io) server.
 
-The purpose of this project really is just to make sure you're
-comfortable with the structure of Shiny applications
+We hope that when you finish this project, you will good enough to go
+and start your own shiny applications!
 
 ### Sidepanel
 
@@ -138,7 +136,7 @@ canvas--this is your submission.
 At this point in the quarter, we expect you to be following the best
 practices we've incorporated into the class. This means:
 
-* Proper use of libraries such as _dplyr_ for data wrangling
+* Proper use of libraries such as _dplyr_ for data manipulation
 * Structuring your code so that if the data changes, you can easily
   update your entire application
 * Clearly commenting and properly organizing your code
@@ -156,7 +154,7 @@ a few more advanced ideas you may consider:
 * Are UFO-s just low-flying airplanes?  If so, you should see a
   correlation between UFO sightings and airports.  Hint: package
   _nycflights13_ contains airport location data.  
-  (or perhaps aliens are just more interested in airports?)
+  (Or who knows? perhaps aliens are just more interested in airports?)
 * Perhaps alcohol plays a role with UFO sightings?  If so, is there a
   relationship between drinking and UFO sightings?  Hint: use the
   drinking data from A4.
@@ -180,7 +178,8 @@ In total **100 points**
 	* various syntax/layout issues: **-6**
 	* plot/table does not respond to widgets: **-15**
 * summary text: **4**
-    * missing number/number not calculated from data: **-2**
+    * a number (or a piece of text) computed from data **2**
+	* the above number embedded in a sentence **1**
 * published and works at [shinyapps.io](http://www.shinyapps.io): **8**
 * appropriate readme **8**
     * no link to [shinyapps.io](http://www.shinyapps.io) version: **-2**

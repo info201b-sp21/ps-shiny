@@ -2,11 +2,10 @@
 
 ## Overview
 
-The purpose of this assignment is to provide you with the opportunity
-to practice building a shiny application.  These are client-server
-type web applications where all the tedious technical tasks of both
-frontend and backend are transparently created by shiny, the user has
-just to provide code for the content and layout.
+This is the last problem set before the final project.  As the
+previous one was about working together with rmarkdown, this one is
+about working alone with shiny.  So you can practice your shiny-skills
+for the final project!
 Shiny has a few concepts
 you have to understand to get going, but once you are comfortable
 with the general skeleton of these applications, transforming your
@@ -17,7 +16,7 @@ analyses into interactive experiences goes fairly fast.
 
 ![UFO](ufo.jpg)
 
-For this assignment, you'll use UFO sightings data.  The data
+For this assignment, we'll use UFO sightings data.  The data
 originates from National UFO Research Center and is
 downloaded from
 [Timothy Renners page](https://data.world/timothyrenner/ufo-sightings).
@@ -42,7 +41,7 @@ your own private repository for this assignment (well, if you are
 reading this readme you probably already did it).  This will
 automatically create a private repository which you will submit to
 Canvas as your assignment.  Note this is an individual assigment, so
-you have to create your own repo.
+you have to create your own repo, not rely on your teammates.
 
 
 ### Complete the following steps:
@@ -56,28 +55,29 @@ requirements:
 
 * There is a side panel in which you've created at least two widgets
   that change the visual output in your application, such as type of
-  the plot, data
+  the plot, or data
   displayed on the x or y axis of a scatterplot.  Note: I mean _side
   panel_ but it does not have to be _sidebarLayout_.
-* There is a main panel where the data is presented (as a plot or table).
+* There is a main panel where the data is presented (as plot or table).
 * You must create at least one visual representation of a dataset (a
   plot) that reacts to
   the widgets in the sidepanel
 * You must also add some textual output that reacts to a widget, such as
-  the number of non-missing observations.
+  the number of non-missing observations, or the most common UFO type
+  in different states.
 * One of your widgets must change the data that is being
   displayed.  For instance, the user may be able to choose between
-  distribution of date and distribution of shape.  In contrary, if the widget only
-  changes the color of the plot, it will not count.
+  distribution of date and distribution of shape.  If the widget only
+  changes color of the plot, it will not count.
 * Your plots, tables, maps and whatever you come up with must be
   appropriately labeled and use appropriate colors.
 * You must push your application up to the
   [shinyapps.io](http://www.shinyapps.io) server (or
   another server if you like), making
   it publicly available
-*  For this application, use the multiple-file setup (i.e both ui.R and
-   server.R):
-	* A ui.R file, that drives the structure of the user interface
+* For this application, use the multiple-file setup (i.e both ui.R and
+  server.R):
+	* A ui.R file that drives the structure of the user interface
 	* A server.R file, that provides instructions to the R server
 	* You should also create a readme.md file (feel free to delete
 	  this one) that contains a brief "user
@@ -86,7 +86,7 @@ requirements:
 	  file should contain a link to your project on the
 	  [shinyapps](http://www.shinyapps.io) server.
 
-We hope that when you finish this project, you will good enough to go
+We hope that when you finish this project, you will good to go
 and start your own shiny applications!
 
 ### Sidepanel
@@ -142,8 +142,6 @@ practices we've incorporated into the class. This means:
 * Clearly commenting and properly organizing your code
 * Writing functions to encapsulate chunks of code that you use more
   than once
-* Avoiding variables that are unnecessary for your analysis/report
-* Creating appropriate labels for your visualizations
 
 
 ## Ideas:
@@ -161,27 +159,6 @@ a few more advanced ideas you may consider:
 * Are there regional/seasonal differences in UFO species (shapes)?
 
 
-## Grading:
+## Grading: 
 
-In total **100 points**
-
-* widget #1 (controls data): **30**
-    * minor layout/explanation issues **-3**
-	* various layout/explanation issues **-6**
-    * widget does not control data: **-15**
-* widget #2:  **20**
-    * minor layout/explanation issues **-3**
-	* various layout/explanation issues **-6**
-    * widget does not affect visualization: **-15**
-* plot(s)/table(s): **30**
-    * minor syntax/layout issues: **-3**
-	* various syntax/layout issues: **-6**
-	* plot/table does not respond to widgets: **-15**
-* summary text: **4**
-    * a number (or a piece of text) computed from data **2**
-	* the above number embedded in a sentence **1**
-* published and works at [shinyapps.io](http://www.shinyapps.io): **8**
-* appropriate readme **8**
-    * no link to [shinyapps.io](http://www.shinyapps.io) version: **-2**
-	* data description unclear **-2**
-	* explanation of widgets/plots unclear **-2**
+See the separate grading.md file
